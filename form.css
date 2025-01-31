@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+
+.left-division {
+    flex: 0 0 40%;
+    background-color: #78b43c;
+    padding: 50px;
+    color: white;
+    text-align: left;
+}
+
+.left-division h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.info-box {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.info-box p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: white;
+    text-align: left;
+}
+
+.right-division {
+    flex: 0 0 60%;
+    padding: 50px;
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #1F64FF;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #1F64FF;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #78b43c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #669b31;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-division {
+        flex: 0 0 100%;
+        padding: 30px;
+    }
+
+    .right-division {
+        flex: 0 0 100%;
+        padding: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        float: none;
+    }
+}

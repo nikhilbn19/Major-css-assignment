@@ -1,0 +1,113 @@
+.hero {
+    max-width: 860px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px 0;
+}
+
+.eyebrow-tag {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid black;
+    color: #1C1F25;
+    margin-bottom: 20px;
+    box-shadow:3px 3px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ai-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.ai-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1C1F25;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4B5162;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #28a745;
+    color: white;
+    border: 2px solid #28a745;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: #28a745;
+}
+
+.btn-secondary {
+    background: white;
+    color: #1C1F25;
+    border: 2px solid #1C1F25;
+}
+
+.btn-secondary:hover {
+    background: #1C1F25;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        max-width: 100%; 
+        padding: 30px 15px; 
+    }
+
+    h1 {
+        font-size: 32px; 
+    }
+
+    .description {
+        font-size: 14px; 
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: row; 
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%; 
+        text-align: center;
+        padding: 14px 0; 
+    }
+}
